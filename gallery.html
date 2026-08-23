@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Hellenic Depot</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Hellenic Depot" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="reservation.html" class="nav-link">Reservations</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <a href="tel:0399391917" class="gold-btn nav-cta">
+                    <i class="fas fa-phone"></i>
+                    <span>Order Now</span>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="container">
+            <h1 class="page-title">Our Gallery</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Gallery</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Glassmorphism Main Content Section -->
+    <main class="glass-orb-wrapper">
+        <div class="glass-orb glass-orb-gold-1"></div>
+        <div class="glass-orb glass-orb-gold-2"></div>
+
+        <div class="container">
+            <!-- Glass Filter Tabs -->
+            <div class="gallery-filters-wrapper fade-in-up">
+                <div class="glass-card glass-filter-bar">
+                    <button class="glass-filter-btn active" data-filter="all">All Photos</button>
+                    <button class="glass-filter-btn" data-filter="food">Charcoal Food</button>
+                    <button class="glass-filter-btn" data-filter="drinks">Wines & Cocktails</button>
+                    <button class="glass-filter-btn" data-filter="interior">Eatery Ambiance</button>
+                    <button class="glass-filter-btn" data-filter="events">Events & Dining</button>
+                </div>
+            </div>
+
+            <!-- Gallery Cards Grid -->
+            <div class="gallery-cards-grid">
+                <!-- Food Items (4) -->
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="food">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" alt="Charcoal Souvlaki Platter" onerror="this.src='https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Charcoal Souvlaki Platter</h4>
+                        <span>Food</span>
+                    </div>
+                </div>
+
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="food">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80" alt="Horiatiki Village Salad" onerror="this.src='https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Authentic Horiatiki Salad</h4>
+                        <span>Food</span>
+                    </div>
+                </div>
+
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="food">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80" alt="Marinated Gyros" onerror="this.src='https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Charcoal Pork & Lamb Gyro</h4>
+                        <span>Food</span>
+                    </div>
+                </div>
+
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="food">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Greek Meze Platter" onerror="this.src='https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Charcoal Lamb Cutlets</h4>
+                        <span>Food</span>
+                    </div>
+                </div>
+
+                <!-- Drinks Items (3) -->
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="drinks">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80" alt="Signature Cocktails" onerror="this.src='https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Signature Ouzo Cocktails</h4>
+                        <span>Drinks</span>
+                    </div>
+                </div>
+
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="drinks">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80" alt="Imported Greek Wine" onerror="this.src='https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Greek & Local Wines</h4>
+                        <span>Drinks</span>
+                    </div>
+                </div>
+
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="drinks">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Freddo Espresso" onerror="this.src='https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Iced Freddo Espresso</h4>
+                        <span>Drinks</span>
+                    </div>
+                </div>
+
+                <!-- Interior Items (3) -->
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="interior">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant Interior" onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Casual Dining Atmosphere</h4>
+                        <span>Interior</span>
+                    </div>
+                </div>
+
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="interior">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Timber Sleeper Bar" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Railway Timber Sleeper Bar</h4>
+                        <span>Interior</span>
+                    </div>
+                </div>
+
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="interior">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Seating Area" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Cozy Dining Seating</h4>
+                        <span>Interior</span>
+                    </div>
+                </div>
+
+                <!-- Events Items (2) -->
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="events">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=600&q=80" alt="Celebrations" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Private Party Celebrations</h4>
+                        <span>Events</span>
+                    </div>
+                </div>
+
+                <div class="glass-card gallery-card-glass fade-in-up" data-category="events">
+                    <div class="gallery-image-frame">
+                        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&q=80" alt="Group Dining" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80'">
+                        <div class="gallery-card-overlay">
+                            <div class="card-icon-badge"><i class="fas fa-magnifying-glass-plus"></i></div>
+                            <span style="color:#ffffff; font-size:0.9rem; font-weight:500;">Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-info">
+                        <h4>Group Dining (Up to 70)</h4>
+                        <span>Events</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="glass-card glass-hours-banner fade-in-up">
+                <h2>Join Us On Poath Rd, Hughesdale</h2>
+                <p style="color: rgba(255,255,255,0.7); font-size: 1rem; margin-bottom: 1.5rem;">Book your table today and experience true Greek philoxenia.</p>
+                <a href="reservation.html" class="gold-glass-btn" style="display: inline-flex !important; width: auto !important; margin: 0 auto; padding: 0.9rem 2.2rem !important;">
+                    <span>Book a Table</span>
+                    <i class="fas fa-calendar-check"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo"><img src="assets/images/logo.png" alt="Hellenic Depot"></a>
+                    <p class="footer-desc">Your local destination for the ultimate casual Greek dining experience. Famous marinated meats on charcoal & other dishes.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Sunday – Thursday</span><span>11am – Late</span></li>
+                        <li class="hours-sub">Last orders 8:30pm</li>
+                        <li><span>Friday – Saturday</span><span>11am – Late</span></li>
+                        <li class="hours-sub">Last orders 9:30pm</li>
+                    </ul>
+                    <p class="hours-note">We stay open until customers finish their meals and drinks</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i><span>94 Poath Rd, Hughesdale<br>Melbourne 3166 AU</span></li>
+                        <li><i class="fas fa-phone"></i><a href="tel:0399391917">03 9939 1917</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:hellenicdepot@gmail.com">hellenicdepot@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Hellenic Depot. All rights reserved. | Family Owned & Operated</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTop" class="scroll-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="toastContainer" class="toast-container"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>

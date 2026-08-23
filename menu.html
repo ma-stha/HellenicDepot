@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Hellenic Depot</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Hellenic Depot" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="reservation.html" class="nav-link">Reservations</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <a href="tel:0399391917" class="gold-btn nav-cta">
+                    <i class="fas fa-phone"></i>
+                    <span>Order Now</span>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <section class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="container">
+            <h1 class="page-title">Our Menu</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Menu</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-page section-padding">
+        <div class="container">
+            <!-- Menu Filters & Search -->
+            <div class="menu-controls">
+                <div class="menu-search">
+                    <input type="text" id="menuSearchInput" placeholder="Search for dishes, ingredients...">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <div class="menu-filter-tabs" id="menuFilters">
+                    <button class="filter-tab active" data-category="all">All</button>
+                    <button class="filter-tab" data-category="starters">Starters</button>
+                    <button class="filter-tab" data-category="gyro">Gyro Plates</button>
+                    <button class="filter-tab" data-category="souvlaki">Souvlaki</button>
+                    <button class="filter-tab" data-category="mains">Mains</button>
+                    <button class="filter-tab" data-category="salads">Salads</button>
+                    <button class="filter-tab" data-category="desserts">Desserts</button>
+                    <button class="filter-tab" data-category="drinks">Drinks</button>
+                </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Items will be rendered here by JS -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="menu-empty" id="menuEmpty" style="display:none">
+                <i class="fas fa-utensils empty-icon"></i>
+                <h3>No items found</h3>
+                <p>We couldn't find any dishes matching your search or filter criteria.</p>
+                <button class="gold-btn-outline" id="resetMenuFilters">View All Items</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo"><img src="assets/images/logo.png" alt="Hellenic Depot"></a>
+                    <p class="footer-desc">Your local destination for the ultimate casual Greek dining experience. Famous marinated meats on charcoal & other dishes.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Sunday – Thursday</span><span>11am – Late</span></li>
+                        <li class="hours-sub">Last orders 8:30pm</li>
+                        <li><span>Friday – Saturday</span><span>11am – Late</span></li>
+                        <li class="hours-sub">Last orders 9:30pm</li>
+                    </ul>
+                    <p class="hours-note">We stay open until customers finish their meals and drinks</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i><span>94 Poath Rd, Hughesdale<br>Melbourne 3166 AU</span></li>
+                        <li><i class="fas fa-phone"></i><a href="tel:0399391917">03 9939 1917</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Hellenic Depot. All rights reserved. | Family Owned & Operated</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Toast Notifications Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Hellenic Depot</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Hellenic Depot" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="reservation.html" class="nav-link active">Reservations</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <a href="tel:0399391917" class="gold-btn nav-cta">
+                    <i class="fas fa-phone"></i>
+                    <span>Order Now</span>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="container">
+            <h1 class="page-title">Book a Table</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Reservations</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Glassmorphism Main Content Section -->
+    <main class="glass-orb-wrapper">
+        <div class="glass-orb glass-orb-gold-1"></div>
+        <div class="glass-orb glass-orb-gold-2"></div>
+
+        <div class="container">
+            <!-- Reservation Form & Info Main Grid -->
+            <div class="contact-main-grid">
+                <!-- Info Column (Left) -->
+                <div class="glass-card glass-res-info-card fade-in-up">
+                    <div class="glass-res-image-frame">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80" alt="Restaurant Ambiance" onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&q=80'">
+                    </div>
+
+                    <div class="glass-badge">
+                        <i class="fas fa-users"></i> Functions Up To 70 People
+                    </div>
+
+                    <ul class="res-contact-list">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>94 Poath Rd, Hughesdale, Melbourne 3166 AU</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>03 9939 1917</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>hellenicdepot@gmail.com</span>
+                        </li>
+                    </ul>
+
+                    <div class="hours-pill-glass" style="margin-top:auto; min-width:unset; width:100%;">
+                        <h4><i class="fas fa-clock" style="color:#c6a255; margin-right:6px;"></i> Dining Service Hours</h4>
+                        <p>Sun – Thu: 11:00 AM – Late</p>
+                        <p>Fri – Sat: 11:00 AM – Late</p>
+                        <span>Kitchen last orders 8:30pm (Thu) / 9:30pm (Sat)</span>
+                    </div>
+                </div>
+
+                <!-- Form Column (Right) -->
+                <div class="glass-card glass-form-card fade-in-up">
+                    <h2>Reserve Your Table</h2>
+                    <p class="subtitle">Book your dining experience online. For parties larger than 12, please call us directly.</p>
+                    
+                    <form id="reservationForm">
+                        <div class="glass-input-wrapper">
+                            <input type="text" id="fullName" name="fullName" class="glass-input" placeholder="Full Name *" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+
+                        <div class="glass-input-wrapper">
+                            <input type="email" id="resEmail" name="resEmail" class="glass-input" placeholder="Email Address *" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div class="glass-input-wrapper">
+                            <input type="tel" id="resPhone" name="resPhone" class="glass-input" placeholder="Phone Number *" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                        <div class="res-form-grid-3">
+                            <div class="glass-input-wrapper">
+                                <input type="date" id="res-date" name="date" class="glass-input" required>
+                                <i class="fas fa-calendar-days"></i>
+                            </div>
+
+                            <div class="glass-input-wrapper">
+                                <input type="time" id="res-time" name="time" class="glass-input" required>
+                                <i class="fas fa-clock"></i>
+                            </div>
+
+                            <div class="glass-input-wrapper">
+                                <input type="number" id="res-guests" name="partySize" class="glass-input" min="1" max="70" placeholder="Guests *" required>
+                                <i class="fas fa-user-group"></i>
+                            </div>
+                        </div>
+
+                        <div class="glass-input-wrapper">
+                            <textarea id="specialRequests" name="specialRequests" class="glass-input" rows="3" placeholder="Special Requests / Dietary Requirements / Seating Preference"></textarea>
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+
+                        <button type="submit" class="gold-glass-btn">
+                            <span>Confirm Reservation</span>
+                            <i class="fas fa-calendar-check"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Why Dine With Us Section -->
+            <div class="glass-card glass-hours-banner fade-in-up" style="margin-top: 3.5rem;">
+                <h2>Why Dine With Us</h2>
+                <div class="feature-cards-grid">
+                    <div class="glass-card feature-card-glass">
+                        <div class="card-icon-badge">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Charcoal Grilled</h3>
+                        <p>Authentic marinated meats cooked fresh over hot charcoal coals.</p>
+                    </div>
+
+                    <div class="glass-card feature-card-glass">
+                        <div class="card-icon-badge">
+                            <i class="fas fa-martini-glass"></i>
+                        </div>
+                        <h3>Full Bar Selection</h3>
+                        <p>Wide selection of Greek & local wines, draft beers, and signature cocktails.</p>
+                    </div>
+
+                    <div class="glass-card feature-card-glass">
+                        <div class="card-icon-badge">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Family Owned</h3>
+                        <p>Warm traditional Greek philoxenia & hospitality in every visit.</p>
+                    </div>
+
+                    <div class="glass-card feature-card-glass">
+                        <div class="card-icon-badge">
+                            <i class="fas fa-champagne-glasses"></i>
+                        </div>
+                        <h3>Functions Up To 70</h3>
+                        <p>The perfect venue for birthday celebrations, family gatherings & private events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo"><img src="assets/images/logo.png" alt="Hellenic Depot"></a>
+                    <p class="footer-desc">Your local destination for the ultimate casual Greek dining experience. Famous marinated meats on charcoal & other dishes.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Sunday – Thursday</span><span>11am – Late</span></li>
+                        <li class="hours-sub">Last orders 8:30pm</li>
+                        <li><span>Friday – Saturday</span><span>11am – Late</span></li>
+                        <li class="hours-sub">Last orders 9:30pm</li>
+                    </ul>
+                    <p class="hours-note">We stay open until customers finish their meals and drinks</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i><span>94 Poath Rd, Hughesdale<br>Melbourne 3166 AU</span></li>
+                        <li><i class="fas fa-phone"></i><a href="tel:0399391917">03 9939 1917</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:hellenicdepot@gmail.com">hellenicdepot@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Hellenic Depot. All rights reserved. | Family Owned & Operated</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTop" class="scroll-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="toastContainer" class="toast-container"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
