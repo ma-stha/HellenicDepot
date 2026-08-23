@@ -282,14 +282,17 @@ a {
 }
 
 .hero-scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.85rem;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .scroll-arrow {
@@ -2521,10 +2524,6 @@ a {
   }
 
   .hero-scroll-indicator {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    transform: none;
     margin-top: 1.25rem;
   }
 }
